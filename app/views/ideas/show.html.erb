@@ -16,7 +16,7 @@
 <% @comments.each do |comment| %>
   <div class="row">
     <div class="col-md-2">
-      <strong><%= comment.user_name %></strong>
+      <strong><%= comment.user.user_name || comment.user.email %></strong>
     </div>
     <div class="col-md-6"><%= comment.body %></div>
     <div class="col-md-3">
